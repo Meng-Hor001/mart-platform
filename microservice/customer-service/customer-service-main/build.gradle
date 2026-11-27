@@ -1,0 +1,10 @@
+plugins {
+    id 'spring-boot-common-conventions'
+    id 'spring-cloud-common-conventions'
+}
+
+dependencies {
+    implementation 'com.scalar.maven:scalar:0.4.4'
+    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+
+}

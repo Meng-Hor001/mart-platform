@@ -1,4 +1,6 @@
 rootProject.name = 'mart-platform'
-includeBuild'istad-common'
+includeBuild 'istad-common'
 includeBuild 'microservice'
 includeBuild 'build-logic'
+
+
