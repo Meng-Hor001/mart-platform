@@ -202,14 +202,19 @@ public class Loan extends AggregateRoot<LoanId> {
     private Loan(Builder builder) {
         super.setId(builder.id);
         memberId = builder.memberId;
-        items = builder.items;
+        items = builder.items == null ? List.of() : List.copyOf(builder.items);
         period = builder.period;
         status = builder.status;
-        fine = builder.fine;
+        fine = builder.fine == null ? Money.ZERO : builder.fine;
         extensionCount = builder.extensionCount;
-        failureMessages = builder.failureMessages;
+        failureMessages = builder.failureMessages == null
+                ? new ArrayList<>()
+                : new ArrayList<>(builder.failureMessages);
     }
 
+    public static Builder builder() {
+        return new Builder();
+    }
 
     public static final class Builder {
         private LoanId id;
@@ -222,10 +227,6 @@ public class Loan extends AggregateRoot<LoanId> {
         private List<String> failureMessages;
 
         private Builder() {
-        }
-
-        public static Builder builder() {
-            return new Builder();
         }
 
         public Builder id(LoanId val) {
