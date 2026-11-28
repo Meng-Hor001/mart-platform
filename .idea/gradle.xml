@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -25,6 +26,20 @@
               <build path="$PROJECT_DIR$/microservice/customer-service" name="customer-service">
                 <projects>
                   <project path="$PROJECT_DIR$/microservice/customer-service" />
+                  <project path="$PROJECT_DIR$/microservice/customer-service/customer-service-domain" />
+                  <project path="$PROJECT_DIR$/microservice/customer-service/customer-service-domain/customer-application-service" />
+                  <project path="$PROJECT_DIR$/microservice/customer-service/customer-service-domain/customer-domain-core" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/microservice/loan-service" name="loan-service">
+                <projects>
+                  <project path="$PROJECT_DIR$/microservice/loan-service" />
+                  <project path="$PROJECT_DIR$/microservice/loan-service/loan-service-domain" />
+                  <project path="$PROJECT_DIR$/microservice/loan-service/loan-service-domain/loan-application-service" />
+                  <project path="$PROJECT_DIR$/microservice/loan-service/loan-service-domain/loan-domain-core" />
+                  <project path="$PROJECT_DIR$/microservice/loan-service/loan-service-main" />
+                  <project path="$PROJECT_DIR$/microservice/loan-service/loan-service-persistence" />
+                  <project path="$PROJECT_DIR$/microservice/loan-service/loan-service-restapi" />
                 </projects>
               </build>
             </builds>
@@ -39,6 +54,16 @@
             <option value="$PROJECT_DIR$/istad-common/istad-common-domain" />
             <option value="$PROJECT_DIR$/microservice" />
             <option value="$PROJECT_DIR$/microservice/customer-service" />
+            <option value="$PROJECT_DIR$/microservice/customer-service/customer-service-domain" />
+            <option value="$PROJECT_DIR$/microservice/customer-service/customer-service-domain/customer-application-service" />
+            <option value="$PROJECT_DIR$/microservice/customer-service/customer-service-domain/customer-domain-core" />
+            <option value="$PROJECT_DIR$/microservice/loan-service" />
+            <option value="$PROJECT_DIR$/microservice/loan-service/loan-service-domain" />
+            <option value="$PROJECT_DIR$/microservice/loan-service/loan-service-domain/loan-application-service" />
+            <option value="$PROJECT_DIR$/microservice/loan-service/loan-service-domain/loan-domain-core" />
+            <option value="$PROJECT_DIR$/microservice/loan-service/loan-service-main" />
+            <option value="$PROJECT_DIR$/microservice/loan-service/loan-service-persistence" />
+            <option value="$PROJECT_DIR$/microservice/loan-service/loan-service-restapi" />
           </set>
         </option>
         <option name="myGradleHome" value="" />

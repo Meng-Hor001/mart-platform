@@ -1,0 +1,28 @@
+pluginManagement {
+    includeBuild('../../build-logic')
+
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+
+    versionCatalogs {
+        libs {
+            from(files("../../gradle/libs.versions.toml"))
+        }
+    }
+}
+
+rootProject.name= "loan-service"
+
+include 'loan-service-main'
+include 'loan-service-persistence'
+include 'loan-service-restapi'
+include 'loan-service-domain:loan-application-service'
+include 'loan-service-domain:loan-domain-core'

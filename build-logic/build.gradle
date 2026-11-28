@@ -8,5 +8,6 @@ repositories {
 }
 
 dependencies {
-    implementation libs.bundles.gradle.dependency.management
+    implementation libs.spring.boot.gradle.plugin
+    implementation libs.dependency.management.plugin
 }

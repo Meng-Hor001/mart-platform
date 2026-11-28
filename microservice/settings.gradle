@@ -1,3 +1,13 @@
+pluginManagement {
+    includeBuild('../build-logic')
+
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+includeBuild('../istad-common')
 dependencyResolutionManagement {
     versionCatalogs {
         libs {
@@ -9,3 +19,4 @@ dependencyResolutionManagement {
 rootProject.name = 'microservices'
 
 includeBuild 'customer-service'
+includeBuild 'loan-service'

@@ -1,0 +1,13 @@
+plugins {
+    id 'spring-common-conventions'
+}
+
+
+dependencies {
+    api 'kh.edu.istad:loan-domain-core'
+    implementation 'org.springframework:spring-tx'
+}
+
+test {
+    useJUnitPlatform()
+}

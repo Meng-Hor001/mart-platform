@@ -1,0 +1,13 @@
+plugins {
+    id 'spring-boot-common-conventions'
+}
+
+dependencies {
+    implementation 'kh.edu.istad:loan-service-restapi'
+    implementation 'kh.edu.istad:loan-service-persistence'
+    runtimeOnly 'org.postgresql:postgresql'
+}
+
+test {
+    useJUnitPlatform()
+}
