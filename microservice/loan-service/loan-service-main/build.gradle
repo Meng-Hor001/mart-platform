@@ -3,8 +3,12 @@ plugins {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'kh.edu.istad:loan-service-restapi'
     implementation 'kh.edu.istad:loan-service-persistence'
+    implementation 'kh.edu.istad:loan-application-service'
+    implementation 'kh.edu.istad:loan-domain-core'
+
     runtimeOnly 'org.postgresql:postgresql'
 }
 
